@@ -5,6 +5,6 @@ WORKDIR /app
 COPY . .
 
 RUN chmod +x gradlew
-RUN ./gradlew build -x test
+RUN ./gradlew bootJar -x test
 
 CMD ["java","-jar","build/libs/*.jar"]
