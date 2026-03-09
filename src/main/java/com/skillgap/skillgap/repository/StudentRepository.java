@@ -1,8 +1,10 @@
 package com.skillgap.skillgap.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import com.skillgap.skillgap.model.Student;
+import org.springframework.stereotype.Repository;
+import com.skillgap.skillgap.entity.Student;
 
+@Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
 }
