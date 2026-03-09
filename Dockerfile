@@ -5,8 +5,7 @@ WORKDIR /app
 COPY . .
 
 RUN chmod +x gradlew
-
-RUN ./gradlew bootJar --no-daemon -x test
+RUN ./gradlew build -x test
 
 EXPOSE 8080
 
